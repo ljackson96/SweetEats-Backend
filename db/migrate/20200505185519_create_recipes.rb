@@ -1,0 +1,13 @@
+class CreateRecipes < ActiveRecord::Migration[6.0]
+  def change
+    create_table :recipes do |t|
+      t.string :name
+      t.string :description
+      t.string :thumb_url
+      t.string :vid_url
+      t.integer :user_ratings
+
+      t.timestamps
+    end
+  end
+end
